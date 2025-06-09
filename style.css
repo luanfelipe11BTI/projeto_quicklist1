@@ -24,6 +24,7 @@ body {
     font-size: 1.6rem;
     padding: 3.2rem;
     background: var(--background-primary);
+
 }
 
 header {
@@ -52,10 +53,11 @@ header {
         cursor: pointer;
     }
 
-     h1 {
+    h1 {
         font-size: 2.4rem;
         color: var(--content-primary);
         line-height: 3.2rem;
+
     }
 }
 
@@ -67,7 +69,7 @@ main {
 .add-item {
     margin-bottom: 4rem;
 
-     input {
+    input {
         width: 100%;
         padding: 1.2rem;
         border: 2px solid var(--border-primary);
@@ -76,8 +78,7 @@ main {
         outline: none;
         color: var(--content-primary);
 
-
-         &::placeholder {
+        &::placeholder {
             color: var(--content-tertiary);
         }
 
@@ -88,10 +89,9 @@ main {
         &:focus {
             border: 2px solid var(--color-brand);
         }
-     }
- }
+    }
 
-     button {
+    button {
         background: var(--color-brand);
         border:none;
         color: var(--always-white);
@@ -106,9 +106,10 @@ main {
         &:hover {
             background: var(--color-brand-hover);
         }
-    }
 
-    
+    }
+}
+
 .list {
     .item {
         background: var(--background-secondary);
@@ -123,7 +124,8 @@ main {
         border-radius: 1.2rem;
         box-shadow: 0 2px 6px rgba(8, 11, 18, 0.2);
 
-         div {
+
+        div {
             display: flex;
             gap: 1.2rem;
             align-items: center;
@@ -133,21 +135,18 @@ main {
             display: none;
         }
 
-         .custom-checkbox {
+        .custom-checkbox {
             width: 1.6rem;
             height: 1.6rem;
             border: 1px solid var(--border-primary);
             border-radius: .6rem;
         }
 
-         label {
+        label {
             cursor: pointer;
         }
 
-    }
-}
-
-div:has(input:checked) {
+        div:has(input:checked) {
             .custom-checkbox {
                 background: var(--color-brand);
                 border: 1px solid var(--color-brand);
@@ -159,7 +158,7 @@ div:has(input:checked) {
             }
         }
 
-          button {
+        button {
             background: none;
             border: none;
             display: flex;
@@ -171,8 +170,10 @@ div:has(input:checked) {
                 opacity: 0.7;
             }
         }
+    }
+}
 
-        .warning {
+.warning {
     background: var(--color-danger);
     color: var(--always-white);
     padding: 1.2rem;
@@ -184,9 +185,8 @@ div:has(input:checked) {
     opacity: 1;
     transform: translateY(0);
     transition: opacity .4s ease, transform .4s ease;
-}
 
- div {
+    div {
         display: flex;
         align-items: center;
         gap: .8re,;
@@ -203,6 +203,7 @@ div:has(input:checked) {
         color: var(--always-white);
         cursor: pointer;
     }
+}
 
 .hide-warning {
     opacity: 0;
@@ -220,15 +221,16 @@ div:has(input:checked) {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         gap: 1.6rem;
-        
-          input {
+         
+
+        input {
             margin-bottom: 0;
             grid-column: 1 / 8;
+            
         }
 
-          button {
+        button {
             grid-column: 8 / 11;
         }
-
     }
-}
+}	
